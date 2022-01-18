@@ -1,0 +1,14 @@
+if __name__ == '__main__':
+    data=[[input(), float(input())] for i in range(int(input()))]
+    comp=[]
+    result=[]
+    for i in range(len(data)):
+        comp.append(data[i][1])
+    myd=list(set(comp))
+    myd.sort()
+    max2=myd[1]
+    for i in range (len(data)):
+        if data[i][1]==max2:
+            result.append(data[i][0])
+    result.sort()
+    print("\n".join(result)) 
